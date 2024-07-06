@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <!--header -->
+        <div class="container">
+        <ul>
+        </ul>
+    </div>
+    <header>
+
+        <div class="container">
+        <h1><a href="index.html">Hotel sunshine</a></h1>
+        <ul>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contac.html">Contac</a></li>
+        </ul>
+         </div>
+        </header>
+
+    <!--banner-->
+    <section class="banner">
+        <h2> HOTEL sunshine</h2>
+    </section>
+
+    <!--about-->
+    <section class="about">
+        <div class="container">
+            <h3>About</h3>
+            <p> Jangan lupa kalau <strong>Hotel sunshine</strong>
+                 merupakan satu satunya Hotel resmi Di
+                 Kota Yogyakarta . Di sini 
+                 Kamar-Kamar dan Fasilitas yang kami pamerkan 
+                 dapat di gunakan selama berlibur.</p>
+        </div>
+    </section>
+
+    <section class="contac">
+        <div class="container">
+        <h3>Contac</h3>
+        <p> Anda bisa menghubungi kontak kami:
+            086376473746, atau webmail hotelsunshine@webmail.com
+        </p>
+    </div>
+    </section>
+
+
+    <!--booking-->
+    
+    <section class="pesan">
+        <div class="container">
+            <h3>Pesan Kamar</h3>
+            <form action="output.php" method="post">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                
+                <label for="checkin">Tanggal Masuk:</label>
+                <input type="date" id="Masuk" name="Masuk" required><br><br>
+                
+                <label for="checkout">Tanggal Keluar:</label>
+                <input type="date" id="Keluar" name="Keluar" required><br><br>
+                
+                <label for="roomtype">Tipe Kamar:</label>
+                <select id="roomtype" name="roomtype" required>
+                    <option value="single">sendiri</option>
+                    <option value="double">berdua</option>
+                    <option value="suite">keluarga</option>
+                </select><br><br>
+                
+                <input type="submit" value="Pesan">
+        </form>
+            
+        </div>
+    </section>
+
+
+</body>
+</html>
